@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sty.css">
+  <title>Register</title>
+</head>
+<body>
+  <div class="container">
+  <h1>Register</h1>
+  <form id="RegisterForm">
+    <label class="user" for="username">Username:</label>
+    <input type="text" placeholder="user" id="username" required>
+    <br><br>
+    <label class="pass" for="password">Email address:</label>
+    <input type="email" placeholder="Email @" id="email" required >
+    <br><br>
+    <label class="pass" for="password">Password:</label>
+    <input type="password" placeholder="pass" id="password" required >
+    <br><br>
+    <button class="button">Create Account</button>
+  </form>
+  <!DOCTYPE html>
+  <script>
+    document.getElementById('RegisterForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (password === '1111') { 
+        alert('create account successful!');
+        window.location.href = 'protected.html'; 
+      } else {
+        alert('something is missing repeat the process');
+      }
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>
